@@ -9,8 +9,7 @@ we intentionally designed the application with several vulnerabilities to demons
 a.Code-Level Issues
 
 Insecure Application (main.go)
-go
-Copy code
+
 package main
 
 import (
@@ -52,9 +51,10 @@ b. Container Security
 
 Insecure Dockerfile
 
-dockerfile
-Copy code
-# Insecure: Using a large, vulnerable base image
+
+
+Insecure: Using a large, vulnerable base image
+
 FROM golang:1.20
 
 WORKDIR /app
