@@ -6,7 +6,7 @@ we intentionally designed the application with several vulnerabilities to demons
 •	Container issues: The application uses a large, unoptimized Docker base image, which unnecessarily increases the risk of exploitation.
 •	Cloud environment threats: we configured the environment poorly, with things like overly permissive IAM roles, open ports, and secrets stored in plaintext.
 
-a.Code-Level Issues
+## a.Code-Level Issues
 
 Insecure Application (main.go)
 
