@@ -8,7 +8,7 @@ we intentionally designed the application with several vulnerabilities to demons
 
 ## a.Code-Level Issues
 
-Insecure Application (main.go)
+### Insecure Application (main.go)
 
 package main
 
@@ -35,7 +35,7 @@ func getEnvVariable() string {
 }
 
 
-Flaws in the Code
+### Flaws in the Code
 
 1.	No Input Validation:
 •	The echoHandler function directly takes user input without validating or sanitizing it.
@@ -47,9 +47,9 @@ Flaws in the Code
 •	The SECRET_KEY environment variable is directly accessed without any encryption or obfuscation.
 •	Risk: If logs or memory dumps are exposed, attackers could easily steal this sensitive information.
 
-b. Container Security
+## b. Container Security
 
-Insecure Dockerfile
+### Insecure Dockerfile
 
 
 
@@ -66,7 +66,7 @@ CMD ["./app"]
 
 
 
-Flaws in the Dockerfile
+## Flaws in the Dockerfile
 
 1.	Large Base Image:
 •	The golang:1.20 image contains unnecessary development tools and libraries.
